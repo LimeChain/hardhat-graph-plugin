@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sudo rm -rf example-subgraph && npx hardhat clean && npx hardhat compile && npx hardhat graph"
+    "build": "sudo rm -rf example-subgraph && npx hardhat clean && npx hardhat compile && npx hardhat graph",
+    "build-subgraph": "cd example-subgraph && npm install && npm run codegen"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "hardhat": "^2.8.0"
   },
   "dependencies": {
+    "js-yaml": "^4.1.0",
     "shelljs": "^0.8.4"
   }
 }

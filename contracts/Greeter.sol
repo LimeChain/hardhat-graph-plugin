@@ -5,7 +5,8 @@ import "hardhat/console.sol";
 
 contract Greeter {
     string private greeting;
-    event NewGreeting(string text);
+
+    event NewGreeting(uint256 id, string text);
 
     constructor(string memory _greeting) {
         console.log("Deploying a Greeter with greeting:", _greeting);
@@ -13,7 +14,8 @@ contract Greeter {
     }
 
     function greet() public returns (string memory) {
-        emit NewGreeting(greeting);
+        // TODO: This id should not be hardcoded
+        emit NewGreeting(1, greeting);
         return greeting;
     }
 
