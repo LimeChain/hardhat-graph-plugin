@@ -4,8 +4,8 @@ POC for a Hardhat plugin that aims to help smart contract/subgraph developers au
 
 More info on the project can be found on this [forum post](https://forum.thegraph.com/t/hardhat-graph-plugin/2863).
 
-To test the plugin out:
-- clone this repo
-- run `npm install` to get the needed dependencies
-- run `npm run build` to build a template subgraph for the Greeter contract provided by Hardhat by default
-- run `npm run build-subgraph` to build the subgraph
+To test the plugin POC out:
+- Clone this repo
+- Run `npm install` to get the needed dependencies
+- Run `npm run build` to build a template subgraph for the Greeter contract provided by Hardhat by default
+- Run `npm run build-subgraph` to build the subgraph
